@@ -1,34 +1,31 @@
 ---
 layout: about
-title: about
+title: About Me
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
+subtitle: PhD at <a href='https://ethz.ch/de.html'>ETH Zürich</a>.
 profile:
   align: right
-  image: prof_pic.jpg
+  image: webpage_pic.jpeg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  address: >
+    <p>OAT Y19, ETH Zürich</p>
 
+news: true  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am pursuing a PhD in computer science at ETH Zürich. I am co-supervised by <a href="https://las.inf.ethz.ch/krausea"> Prof. Andreas Krause </a> and <a href="http://crl.ethz.ch/people/coros/index.html"> Prof. Stelian Coros</a>. 
+My research interests are Reinforcement learning (RL): model-based RL, nonepisodic RL, safe RL, meta RL, continuous time RL, exploration (multimodal) in RL, active learning and robotics. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Since December 2024, I have started an internship at <a href="https://aws.amazon.com">Amazon Web Services</a> in Berlin as a research scientist. Currently, I am working on leveraging RL for fine-tuning LLM agents to master real-world applications.
+
+From July 2024 -- December 2024 I was a research visitor at <a href="https://www.berkeley.edu/">University of California, Berkeley</a> at the <a href="https://rll.berkeley.edu/"> Berkeley Robot Learning lab</a> where I was supervised by <a href="https://people.eecs.berkeley.edu/~pabbeel/"> Prof. Pieter Abbeel</a>. During the visit, I worked on developing a class of simple, efficient, and scalable algorithms for exploration in RL, see <a href="https://sukhijab.github.io/projects/maxinforl/">MaxInfoRL</a>. 
+
+Prior to my PhD, I completed a BSc in Mechanical Engineering and a masters in Robotics at ETH. I completed my master thesis at the <a href="https://www.rwth-aachen.de/go/id/a/?lidx=1">RWTH Aachen university</a> under the supervision of <a href="https://baumanndominik.github.io/">Prof. Dominik Baumann</a>, <a href="https://www.dsme.rwth-aachen.de/cms/dsme/das-institut/team/~jlolt/prof-sebastian-trimpe/?allou=1">Prof. Sebastian Trimpe</a>, and Prof. Andreas Krause. I received the <a href="https://en.wikipedia.org/wiki/ETH_medal#:~:text=The%20ETH%20medal%20is%20awarded,award%20includes%20a%20cash%20prize.">ETH medal</a> for my thesis.
+
+Besides research, I enjoy playing football and support <a href='https://www.liverpoolfc.com/'>Liverpool FC</a>. 
+
