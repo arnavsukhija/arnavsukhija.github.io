@@ -20,6 +20,6 @@ I am a master's student in Data Science at ETH Zürich. I also completed my bach
 
 Since September 2025, I have been an exchange student at the Faculty of Engineering Science at KU Leuven.
 
-In November 2025, I started working as a software engineer at <a href="https://www.mobility.siemens.com/ch/de.html">Siemens Mobility</a>. I contribute to various maintenance software, internal tools, and digitalization solutions.
+In November 2024, I started working as a software engineer at <a href="https://www.mobility.siemens.com/ch/de.html">Siemens Mobility</a>. I contribute to various maintenance software, internal tools, and digitalization solutions.
 
 When I am not studying or working, you can find me at the gym or enjoying other sports. I am also a passionate supporter of <a href='https://www.liverpoolfc.com/'>Liverpool FC</a>.
