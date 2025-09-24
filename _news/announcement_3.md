@@ -5,4 +5,4 @@ inline: True
 related_posts: false
 ---
 
-My great master student (now PhD at <a href="https://las.inf.ethz.ch/">LAS</a>), <a href="https://jonhue.github.io/">Jonas Hübotter</a>, is awarded the ETH medal for his master thesis.
+Started my Master of Science in Data Science at <a href="https://inf.ethz.ch/">ETH Zürich </a>.
