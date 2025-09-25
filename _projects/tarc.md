@@ -1,6 +1,6 @@
 ---
 layout: page
-title: TARC: Time-Adaptive Robotic Control
+title: "TARC: Time-Adaptive Robotic Control"
 img: /assets/img/publication_preview/racecar_simfsvgd.gif
 importance: 1
 category: work
