@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "TARC: Time-Adaptive Robotic Control"
-img: /assets/img/publication_preview/racecar_simfsvgd.gif
+img: /assets/img/publication_preview/TARC_perturbation_Go1.gif
 importance: 1
 category: work
 layout: distill
@@ -36,9 +36,18 @@ authors:
 <iframe width="560" height="315" src="https://youtu.be/w0y6uusnPYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Abstract
+
 Fixed-frequency control in robotics imposes a trade-off between the efficiency of low-frequency control and the robustness of high-frequency control, a limitation not seen in adaptable biological systems. We address this with a reinforcement learning approach in which policies jointly select control actions and their application durations, enabling robots toautonomously modulate their control frequency in response to situational demands. We validate our method with zero-shot sim-to-real experiments on two distinct hardware platforms: a high-speed RC car and a quadrupedal robot. Our method matches or outperforms fixed-frequency baselines in terms of rewards while significantly reducing the control frequency and exhibiting adaptive frequency control under real-world conditions.
 
 
-# Overview
+# Quadrupedal Locomotion
 
+<video width="100%" height="auto" controls>
+  <source src="/assets/video/tarc_videos/Go1_perturbation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
+<video width="100%" height="auto" controls>
+  <source src="/assets/video/tarc_videos/Go1_RunThenTurn.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
