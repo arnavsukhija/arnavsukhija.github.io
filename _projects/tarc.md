@@ -42,12 +42,30 @@ Fixed-frequency control in robotics imposes a trade-off between the efficiency o
 
 # Quadrupedal Locomotion
 
-<video width="100%" height="auto" controls>
-  <source src="/assets/video/tarc_videos/Go1_perturbation.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div style="display: flex; justify-content: space-between; gap: 20px;">
+  <div style="flex: 1;">
+    <h3>Run Then Turn Scenario</h3>
+    <video width="100%" height="auto" controls>
+      <source src="/assets/video/tarc_videos/Go1_RunThenTurn.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <div style="flex: 1;">
+    <h3>Applying perturbations</h3>
+    <video width="100%" height="auto" controls>
+      <source src="/assets/video/tarc_videos/Go1_perturbation.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 
-<video width="100%" height="auto" controls>
-  <source src="/assets/video/tarc_videos/Go1_RunThenTurn.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+# RC Car
+
+<div style="text-align: center;">
+  <h3>RC Car Experiment</h3>
+  <video width="80%" height="auto" controls>
+    <source src="/assets/video/tarc_videos/rc-car-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
