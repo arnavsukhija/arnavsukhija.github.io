@@ -7,7 +7,7 @@ category: work
 layout: distill
 published: true
 date: 2025-10-18 12:00:00
-permalink: /projects/Adaptive/
+permalink: /projects/tarc/
 tags: [Reinforcement Learning, Robotics, Adaptive-Control, publication]
 authors:
   - name: Arnav Sukhija
@@ -34,7 +34,9 @@ authors:
       name: LAS, ETH Zurich
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w0y6uusnPYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style="text-align: center;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/w0y6uusnPYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 # Abstract
 
@@ -45,19 +47,19 @@ Fixed-frequency control in robotics imposes a trade-off between the efficiency o
 
 <figure style="text-align: center;">
   <img src="/assets/img/tarc_overview.png" alt="Overview of the TARC Architecture">
-  <figcaption style="margin-top: 5px;">
-    Overview of the **TARC Architecture**. TARC allows policies to learn both an action and its according application duration, allowing the agent to implicitly select its own control frequency. To encourage low-frequency control where adequate, the environment returns a penalized reward (with a cost c) to the agent such that it learns a trade-off between applying high-frequency and low-frequency control. 
-  </figcaption>
 </figure>
+
+
+Overview of the **TARC Architecture**. TARC allows policies to learn both an action and its according application duration, allowing the agent to implicitly select its own control frequency. To encourage low-frequency control where adequate, the environment returns a penalized reward (with a cost c) to the agent such that it learns a trade-off between applying high-frequency and low-frequency control. 
 
 # Method
 
 <figure style="text-align: center;">
   <img src="/assets/img/tarc_method.png" alt="Overview of our Deployment method">
-  <figcaption style="margin-top: 5px;">
-    Overview of our **Deployment setup**. We validate TARC through zero-shot sim-to-real deployment on two distinct robotic platforms. Policies are learned entirely offline with the help of simulators and deployed zero-shot on to the hardware without further fine-tuning.
-  </figcaption>
 </figure>
+
+
+Overview of our **Deployment setup**. We validate TARC through zero-shot sim-to-real deployment on two distinct robotic platforms. Policies are learned entirely offline with the help of simulators and deployed zero-shot on to the hardware without further fine-tuning.
 
 # Results
 
