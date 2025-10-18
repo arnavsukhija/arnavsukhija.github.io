@@ -7,6 +7,7 @@ category: work
 layout: distill
 published: true
 date: 2025-10-18 12:00:00
+permalink: /projects/tarc/
 tags: [Reinforcement Learning, Robotics, Adaptive-Control, publication]
 authors:
   - name: Arnav Sukhija
