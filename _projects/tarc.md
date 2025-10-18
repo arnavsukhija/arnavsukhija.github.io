@@ -6,7 +6,7 @@ importance: 1
 category: work
 layout: distill
 published: true
-date: 2025-10-18 11:30:00
+date: 2025-10-18 12:00:00
 tags: [Reinforcement Learning, Robotics, Adaptive-Control, publication]
 authors:
   - name: Arnav Sukhija
