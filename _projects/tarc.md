@@ -65,12 +65,35 @@ authors:
     padding: 20px 24px;
     border-left: 3px solid currentColor;
   }
-  .tarc-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 24px;
+
+  /* Rollout footage: centred, modest width, never full-bleed. */
+  .tarc-media {
+    text-align: center;
     margin-top: 20px;
+  }
+  .tarc-media video,
+  .tarc-media img {
+    width: 70%;
+    min-width: 260px;
+    height: auto;
+    border-radius: 4px;
+  }
+  .tarc-media.tarc-media-small video,
+  .tarc-media.tarc-media-small img {
+    width: 45%;
+    min-width: 220px;
+  }
+
+  /* Multi-panel result plots need more than the article column. Capped so
+     they never exceed their native resolution. */
+  .tarc-plot {
+    text-align: center;
+    margin-top: 24px;
+  }
+  .tarc-plot img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
   }
 </style>
 
@@ -80,13 +103,16 @@ authors:
   </p>
   <p>
     <a href="https://arxiv.org/abs/2510.23176">Paper</a> &nbsp;&middot;&nbsp;
-    <a href="https://youtu.be/lTcANSTLAYU">Video</a> &nbsp;&middot;&nbsp;
+    <a href="https://youtu.be/lTcANSTLAYU">Full video</a> &nbsp;&middot;&nbsp;
     <a href="https://github.com/arnavsukhija/tarc">Code</a>
   </p>
 </div>
 
 <div style="text-align: center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/lTcANSTLAYU" title="TARC: Time-Adaptive Robotic Control" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <video width="85%" height="auto" autoplay loop muted playsinline controls style="border-radius: 4px;">
+    <source src="/assets/video/tarc_videos/tarc_teaser.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
 
 <div class="tarc-callout">
@@ -101,9 +127,10 @@ authors:
 
 # Adaptation, not just a lower rate
 
-<div style="text-align: center; margin-top: 20px;">
-  <video width="85%" height="auto" autoplay loop muted playsinline controls style="border-radius: 4px;">
+<div class="tarc-media">
+  <video autoplay loop muted playsinline controls>
     <source src="/assets/video/tarc_videos/Go1_perturbation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
 </div>
 
@@ -131,11 +158,13 @@ A time-adaptive policy maps the state to a pair: an action <i>u</i><sub>t</sub> 
 
 We pose this as a **constrained MDP**: maximize task reward subject to a budget on the expected number of policy queries. With <i>q</i><sub>t</sub> &isin; {0, 1} indicating whether the policy is queried at step <i>t</i>,
 
-$$
+<p style="text-align: center;">
+\[
 \max_{\pi} \; \mathbb{E}_{\pi}\!\left[\sum_{t} \gamma^{t} r(x_t, u_t)\right]
 \quad \text{s.t.} \quad
-\mathbb{E}_{\pi}\!\left[\sum_{t} \gamma^{t} q_t\right] \leq \frac{K}{1-\gamma},
-$$
+\mathbb{E}_{\pi}\!\left[\sum_{t} \gamma^{t} q_t\right] \leq \frac{K}{1-\gamma}
+\]
+</p>
 
 where <i>K</i> &isin; (0, 1] is the query budget — a fixed-frequency controller queries at every step, saturating it at <i>K</i> = 1. Constraining the rate itself has two practical consequences:
 
@@ -173,13 +202,12 @@ Three platforms spanning very different demands: a drifting RC car, a quadruped,
 
 Each query to a VLA is a full transformer forward pass, which makes inference frequency a direct deployment cost — and makes this the setting where adaptive querying pays off most. We apply TARC at the post-training stage of a frozen &pi;<sub>0</sub> checkpoint on the LIBERO benchmark, using diffusion steering to predict how much of an action chunk to execute before re-querying.
 
-<div class="tarc-row">
-  <div style="flex: 0 1 320px;">
-    <img src="/assets/img/libero_enhanced2.gif" alt="TARC controlling a pi-0 policy on a LIBERO pick-and-place task" style="width: 100%; border-radius: 4px;">
-  </div>
-  <div style="flex: 1 1 380px;">
-    <img class="tarc-invert" src="/assets/img/tarc_vlaResults.png" alt="TARC on the LIBERO benchmark against fixed query-frequency baselines" style="width: 100%;">
-  </div>
+<div class="tarc-media tarc-media-small">
+  <img src="/assets/img/libero_enhanced2.gif" alt="TARC controlling a pi-0 policy on a LIBERO pick-and-place task">
+</div>
+
+<div class="l-page tarc-plot">
+  <img class="tarc-invert" src="/assets/img/tarc_vlaResults.png" alt="TARC on the LIBERO benchmark against fixed query-frequency baselines">
 </div>
 
 <p class="tarc-caption">
@@ -190,16 +218,15 @@ That last comparison is the informative one. A fixed schedule running at TARC's 
 
 ## Quadrupedal locomotion
 
-<div class="tarc-row">
-  <div style="flex: 1 1 300px;">
-    <video width="100%" height="auto" autoplay loop muted playsinline controls style="border-radius: 4px;">
-      <source src="/assets/video/tarc_videos/Go1_RunThenTurn.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div style="flex: 1 1 300px;">
-    <img class="tarc-invert" src="/assets/img/tarc_go1Results.png" alt="TARC vs fixed-frequency control on the Go1" style="width: 100%;">
-  </div>
+<div class="tarc-media">
+  <video autoplay loop muted playsinline controls>
+    <source src="/assets/video/tarc_videos/Go1_RunThenTurn.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="l-page tarc-plot">
+  <img class="tarc-invert" src="/assets/img/tarc_go1Results.png" alt="TARC vs fixed-frequency control on the Go1">
 </div>
 
 <p class="tarc-caption">
@@ -210,16 +237,15 @@ Control frequency responds to task difficulty on its own: lower on smooth low-sp
 
 ## RC car
 
-<div class="tarc-row">
-  <div style="flex: 1 1 300px;">
-    <video width="100%" height="auto" autoplay loop muted playsinline controls style="border-radius: 4px;">
-      <source src="/assets/video/tarc_videos/rc-car-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div style="flex: 1 1 300px;">
-    <img class="tarc-invert" src="/assets/img/tarc_rcCarResults.png" alt="TARC vs fixed-frequency control on the RC car" style="width: 100%;">
-  </div>
+<div class="tarc-media">
+  <video autoplay loop muted playsinline controls>
+    <source src="/assets/video/tarc_videos/rc-car-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="l-page tarc-plot">
+  <img class="tarc-invert" src="/assets/img/tarc_rcCarResults.png" alt="TARC vs fixed-frequency control on the RC car">
 </div>
 
 <p class="tarc-caption">

@@ -18,6 +18,8 @@ Hi!
 
 I am a master's student in Data Science at ETH Zürich, where I also completed my bachelor's degree in computer science. During my undergraduate studies, I had the privilege of being supervised by <a href="https://las.inf.ethz.ch/krausea"> Prof. Andreas Krause </a>, <a href="http://crl.ethz.ch/people/coros/index.html"> Prof. Stelian Coros</a>, and <a href="https://dorfler.ethz.ch/"> Prof. Florian Dörfler</a>.
 
-Since November 2024, I have been working as a software engineer at <a href="https://www.mobility.siemens.com/ch/de.html">Siemens Mobility</a>, where I contribute to various maintenance software, internal tools, and digitalization solutions. Since September 2025, I am also an exchange student at the Faculty of Engineering Science at KU Leuven.
+Since November 2024, I have been working as a Software Engineer at Siemens Mobility, where I build full-stack applications to automate complex railway processes. My work spans across our core digitalization initiatives, from designing data models and optimizing CI/CD pipelines to evaluating Generative AI solutions and LLM integrations.
+
+From September 2025 to February 2026, I was an exchange student at the Faculty of Engineering Science at KU Leuven.
 
 When I'm not studying or working, you can find me at the gym or enjoying other sports. I am also very fond of traveling, as you can see in my picture from Osaka. And, of course, I am a passionate supporter of <a href="https://www.liverpoolfc.com/">Liverpool FC</a>.
