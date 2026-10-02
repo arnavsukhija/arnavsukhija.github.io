@@ -99,7 +99,7 @@ authors:
 
 <div style="text-align: center; margin-bottom: 24px;">
   <p style="font-size: 1.05em; font-weight: 600; letter-spacing: 0.04em; margin-bottom: 12px;">
-    Conference on Robot Learning (CoRL) 2026 &middot; Austin, TX
+    (Spotlight) Conference on Robot Learning (CoRL) 2026 &middot; Austin, TX
   </p>
   <p>
     <a href="https://arxiv.org/abs/2510.23176">Paper</a> &nbsp;&middot;&nbsp;
